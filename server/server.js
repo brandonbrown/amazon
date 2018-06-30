@@ -8,3 +8,13 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('dev'));
+
+app.get('/', (req, res, next) => {
+    res.json({
+        user: "Malcolm Ross"
+    });
+});
+
+app.listen(3030, err => {
+    console.log('Magic happens on port 3030');
+})
