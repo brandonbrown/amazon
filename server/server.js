@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const config = require('./config');
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -15,6 +17,6 @@ app.get('/', (req, res, next) => {
     });
 });
 
-app.listen(3030, err => {
-    console.log('Magic happens on port 3030');
+app.listen(config.port, err => {
+    console.log('Magic happens on port awesome ' + config.port);
 })
