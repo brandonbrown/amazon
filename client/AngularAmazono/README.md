@@ -1,3 +1,5 @@
+Add critical project information here. Other than running the project, is there anything a developer picking up the project should know?
+
 # AngularAmazono
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
